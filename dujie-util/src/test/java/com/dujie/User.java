@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -17,4 +18,6 @@ public class User {
     private String password;
 
     private List<Address> tempList;
+
+//    private Date date;
 }

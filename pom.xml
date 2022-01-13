@@ -12,6 +12,7 @@
         <module>dujie-common</module>
         <module>dujie-util</module>
         <module>dujie-starter-web</module>
+        <module>dujie-starter-exception</module>
     </modules>
 
     <name>dujie-starter</name>
@@ -30,7 +31,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
-            <scope>provided</scope>
+<!--            <scope>provided</scope>-->
         </dependency>
 
         <dependency>

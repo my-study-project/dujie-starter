@@ -16,7 +16,7 @@ public class GlobalExceptionAdvice {
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
     public ResponseEntity<BaseResponse> errorHandler() {
-        return ResponseEntity.status(HttpStatus.OK).body(BaseResponse.buildFail(DefaultExceptionEnum.NETWORK_ANOMALY_ERRORTYPE));
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(BaseResponse.buildFail(DefaultExceptionEnum.NETWORK_ANOMALY_ERRORTYPE));
     }
 
 }
